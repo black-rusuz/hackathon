@@ -33,3 +33,6 @@ Route::patch('admin/task/{task}', 'App\Http\Controllers\Admin\Task\UpdateControl
 Route::delete('admin/task/{task}', 'App\Http\Controllers\Admin\Task\DeleteController')->name('admin.task.delete');
 
 
+Route::get('admin/session', 'App\Http\Controllers\Admin\Session\IndexController')->name('admin.session.index');
+Route::get('admin/session/{session}', 'App\Http\Controllers\Admin\Session\ShowController')->name('admin.session.show');
+
