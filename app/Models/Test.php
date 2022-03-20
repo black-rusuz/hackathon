@@ -10,7 +10,7 @@ class Test extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'time'];
+        'title', 'time', 'description', 'levelup_id', 'topic_id'];
     protected $table = 'tests';
     protected $quarded = false;
 

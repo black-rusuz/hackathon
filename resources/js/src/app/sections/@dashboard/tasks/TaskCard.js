@@ -8,7 +8,7 @@ TaskCard.propTypes = {
 };
 
 export default function TaskCard({ task }) {
-  const { name, description, topic, level, time } = task;
+  const { title, description, topic, level, time } = task;
 
   return (
     <Card>
@@ -25,7 +25,7 @@ export default function TaskCard({ task }) {
         >
           <Box>
             <Typography variant="subtitle1" noWrap>
-              {name}
+              {title}
             </Typography>
             {time && (
               <Typography
@@ -34,7 +34,7 @@ export default function TaskCard({ task }) {
                 sx={{ mb: 1 }}
                 fontWeight="fontWeightRegular"
               >
-                {time}
+                {time}ч
               </Typography>
             )}
             <Typography variant="subtitle2">{description}</Typography>
