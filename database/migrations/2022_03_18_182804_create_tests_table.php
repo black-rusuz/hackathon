@@ -16,9 +16,9 @@ class CreateTestsTable extends Migration
         Schema::create('tests', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->integer('time'); 
-            $table->unsignedBigInteger('levelup_id')->nullable();
-            $table->unsignedBigInteger('topic_id')->nullable();
+            $table->integer('time');
+            $table->integer('levelup_id')->nullable();
+            $table->integer('topic_id')->nullable();
             $table->timestamps();
 
             $table->index('levelup_id', 'test_levelup_idx');

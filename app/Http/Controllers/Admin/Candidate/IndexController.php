@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Session;
+namespace App\Http\Controllers\Admin\Candidate;
 
 use App\Http\Controllers\Controller;
 
-use App\Models\Session;
+use App\Models\Candidate;
 
 class IndexController extends Controller
 {
     public function __invoke()
     {
-        $sessions = Session::all();
+        $candidate = Candidate::all();
         return view ('user');
     }
 }

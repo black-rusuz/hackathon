@@ -11,7 +11,6 @@ class IndexController extends Controller
     public function __invoke()
     {
         $tests = Test::all();
-        dd($tests);
-        return view ('admin');
+        return view ('admin', ['tests' => $tests]);
     }
 }

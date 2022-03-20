@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Session;
+namespace App\Http\Controllers\Admin\Candidate;
 use App\Http\Controllers\Controller;
-use App\Models\Session;
+use App\Models\Candidate;
 
 class ShowController extends Controller
 {
-    public function __invoke(Session $session)
+    public function __invoke(Candidate $session)
     {
 //        return view('admin.test.show', compact('test')); //сослаться на нужную вьюшку
     }

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin\Test;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Post\UpdateRequest;
+use App\Http\Requests\UpdateRequest;
 use App\Models\Test;
 
 

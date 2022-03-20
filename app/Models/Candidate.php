@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Session extends Model
+class Candidate extends Model
 {
     use HasFactory;
 
@@ -16,6 +16,6 @@ class Session extends Model
 
      public function tests()
      {
-         return $this->belongsToMany(Task::class, 'session_test', 'session_id', 'test_id');
+         return $this->belongsToMany(Task::class, 'candidates_test', 'candidates_id', 'test_id');
      }
 }

@@ -14,9 +14,6 @@ class Test extends Model
     protected $table = 'tests';
     protected $quarded = false;
 
-     public function tasks()
-     {
-         return $this->belongsToMany(Task::class, 'test_task', 'test_id', 'task_id');
-     }
+
 
 }

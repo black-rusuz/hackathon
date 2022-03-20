@@ -11,6 +11,9 @@
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
+<script>
+    let tests = '{!! $tests !!}';
+</script>
 <div id="app"></div>
 <script src="../js/admin.js"></script>
 </body>

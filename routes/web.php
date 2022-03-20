@@ -20,7 +20,7 @@ Route::get('login', 'App\Http\Controllers\RootController');
 Route::get('admin', 'App\Http\Controllers\RootController');
 
 Route::get('admin/test', 'App\Http\Controllers\Admin\Test\IndexController')->name('admin.test.index');
-Route::get('admin/test/create', 'App\Http\Controllers\Admin\Test\CreateController')->name('admin.test.create');
+Route::get('admin/testcreate', 'App\Http\Controllers\Admin\Test\CreateController')->name('admin.test.create');
 Route::post('admin/test', 'App\Http\Controllers\Admin\Test\StoreController')->name('admin.test.store');
 Route::get('admin/test/{test}', 'App\Http\Controllers\Admin\Test\ShowController')->name('admin.test.show');
 Route::get('admin/test/{test}/edit', 'App\Http\Controllers\Admin\Test\EditController')->name('admin.test.edit');
@@ -36,6 +36,6 @@ Route::patch('admin/task/{task}', 'App\Http\Controllers\Admin\Task\UpdateControl
 Route::delete('admin/task/{task}', 'App\Http\Controllers\Admin\Task\DeleteController')->name('admin.task.delete');
 
 
-Route::get('admin/session', 'App\Http\Controllers\Admin\Session\IndexController')->name('admin.session.index');
-Route::get('admin/session/{session}', 'App\Http\Controllers\Admin\Session\ShowController')->name('admin.session.show');
+Route::get('admin/session', 'App\Http\Controllers\Admin\Candidate\IndexController')->name('admin.candidate.index');
+Route::get('admin/session/{session}', 'App\Http\Controllers\Admin\Candidate\ShowController')->name('admin.candidate.show');
 
