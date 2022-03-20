@@ -23,8 +23,6 @@ class CreateTasksTable extends Migration
             $table->string('variant_4');
             $table->string('answer');
 
-
-            //66(уровень?) тематика, 
             $table->timestamps();
         });
     }
