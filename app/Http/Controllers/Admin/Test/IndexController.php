@@ -12,5 +12,6 @@ class IndexController extends Controller
     {
         $tests = Test::all();
         dd($tests);
+        return view ('admin');
     }
 }

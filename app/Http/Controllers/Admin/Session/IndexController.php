@@ -11,6 +11,6 @@ class IndexController extends Controller
     public function __invoke()
     {
         $sessions = Session::all();
-        dd($tests);
+        return view ('user');
     }
 }

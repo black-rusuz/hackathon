@@ -14,10 +14,10 @@ import NotFound from './pages/Page404';
 export default function Router() {
     return useRoutes([
         {
-            path: '/dashboard',
+            path: '/admin',
             element: <DashboardLayout/>,
             children: [
-                {path: 'app', element: <Tests/>},
+                {path: 'test', element: <Tests/>},
                 {path: 'user', element: <User/>},
                 {path: 'tasks', element: <Tasks/>}
             ]
@@ -26,12 +26,10 @@ export default function Router() {
             path: '/',
             element: <LogoOnlyLayout/>,
             children: [
-                {path: '/', element: <Navigate to="/dashboard/app"/>},
                 {path: 'login', element: <Login/>},
                 {path: '404', element: <NotFound/>},
-                {path: '*', element: <Navigate to="/404"/>}
+                // {path: '*', element: <Navigate to="/404"/>}
             ]
-        },
-        {path: '*', element: <Navigate to="/404" replace/>}
+        }
     ]);
 }
